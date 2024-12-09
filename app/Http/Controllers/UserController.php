@@ -15,7 +15,6 @@ class UserController extends Controller
         return view('index', compact('users'));
     }
 
-    // Search function to filter users based on query
     public function search(Request $request)
     {
         $query = $request->get('query', '');
